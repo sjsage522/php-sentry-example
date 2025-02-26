@@ -1,0 +1,21 @@
+{
+    "name": "jun/php-sentry-example",
+    "type": "project",
+    "license": "mit",
+    "autoload": {
+        "psr-4": {
+            "Jun\\PhpSentryExample\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Junseok Shin",
+            "email": "sjsage522@gmail.com"
+        }
+    ],
+    "require": {
+        "sentry/sentry": "^4.7",
+        "guzzlehttp/guzzle": "^7.8",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
