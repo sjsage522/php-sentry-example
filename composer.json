@@ -1,10 +1,16 @@
 {
     "name": "jun/php-sentry-example",
+    "description": "A PHP project integrating Sentry for error tracking with asynchronous HTTP requests using Guzzle.",
     "type": "project",
-    "license": "mit",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Jun\\PhpSentryExample\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Jun\\PhpSentryExample\\": "tests/"
         }
     },
     "authors": [
@@ -14,8 +20,16 @@
         }
     ],
     "require": {
+        "php": ">=7.4 <9.0",
         "sentry/sentry": "^4.7",
         "guzzlehttp/guzzle": "^7.8",
         "vlucas/phpdotenv": "^5.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "mockery/mockery": "^1.5"
+    },
+    "scripts": {
+        "test": "phpunit --testdox"
     }
 }
