@@ -1,6 +1,7 @@
 {
     "name": "jun/php-sentry-example",
     "description": "A PHP project integrating Sentry for error tracking with asynchronous HTTP requests using Guzzle.",
+    "version": "0.0.1",
     "type": "project",
     "license": "MIT",
     "autoload": {
